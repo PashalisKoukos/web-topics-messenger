@@ -1,0 +1,28 @@
+<!--author : Pachalis Koukos-->
+<!--HTML for the registration form-->
+<!-- This HTML page provides a form for users to create a new account. It includes fields for username and password, along with client-side validation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/registerPageStyle.css"> <!--link to css file-->
+    <link rel="icon" type="image/png" href="imgs/lock.webp"> <!--favicon-->
+</head>
+<body>
+    <div class="sign-up-container"> <!--Container for the sign up form-->
+        <h1>Sign Up</h1>
+        <form action=RegisterPageServlet method="POST" onsubmit="return isValid()"> <!--Form that submits to the RegisterPageServlet and calls the isValid function on submit to check the input -->
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" name="username" placeholder="e.g. George123" required>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" placeholder="Your password" required>
+            <label for="confirm-password">Confirm your password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/registerPage.js"></script> <!--link to javascript file to handle form validation-->
+</body>
+</html>

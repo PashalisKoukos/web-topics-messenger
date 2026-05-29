@@ -1,0 +1,106 @@
+/*  author: Paschalis Koukos
+    This CSS file styles the SendMessageTopic.jsp page. It sets a background image for the
+    body, styles the text and form elements, and includes hover effects for buttons and links. The design
+    aims to create a visually appealing and user-friendly interface for sending messages. 
+*/
+
+body { /* general styles for the body of the page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* centering the content both vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+
+    /* background image settings */
+    background-image: url("../imgs/sendBack.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{ /* styles for paragraph elements */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8259d5;
+    font-size: 1.5rem;
+}
+
+p::first-line{ /* styles for the first line of paragraph elements */
+    color: rgb(104 7 7 / 0.75);
+    font-size: 1.7rem;
+}
+
+.send-container { /* styles for the container that holds the form elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 60vh;
+
+    background-color: rgba(221, 179, 165, 0.5); /* semi-transparent background color */
+
+    backdrop-filter: blur(10px); /* blur effect for the background */
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px; 
+}
+
+textarea { /* styles for the textarea element */
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none; /* prevent resizing of the textarea */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select { /* styles for the select element */
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #da7f7f;
+    cursor: pointer;
+}
+
+button { /* styles for the button element */
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #8259d5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover { /* hover effect for the button */
+    background-color: #321e5a;
+    color: white;
+}
+
+label { /* styles for the label element */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.back-link { /* styles for the back link btn */
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8259d5;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.back-link:hover { /* hover effect for the back link btn */
+    background-color: #2b155a;
+}

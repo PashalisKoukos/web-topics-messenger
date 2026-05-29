@@ -1,0 +1,110 @@
+/*  author : Paschalis Koukos
+    This CSS file styles the mainPage.jsp page. It sets a background image for the body, styles the text and buttons,
+    and includes hover effects for buttons and links. The design aims to create a visually appealing and user-friendly
+    interface for the main page of the application. 
+*/
+
+body{ /* Setting the background image and styling for the main page */
+    /* Centering content and setting the layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+    /* Background image settings */
+    background-image: url("../imgs/mainBack.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu-buttons{ /* Styling for the container that holds the menu buttons */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgb(225 223 96);
+    width: 350px;
+}
+
+.my-button{ /* Styling for the buttons on the main page */
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: bisque;
+    border-radius: 15px;
+}
+
+h1{ /* Styling for the main heading on the page */
+    text-align: center;
+    font-family: "Baskerville Old Face", cursive;
+}
+
+#changePassButton{ /* Specific styling for the change password button */
+    background-color: #0a5d97;
+    color: white;
+    border-radius: 15px;
+}
+
+#changePassButton:hover{ /* Hover effect for the change password button */
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 12px rgb(225 223 96);
+    background-color: #60e1a1;
+    cursor: pointer;
+}
+
+.my-button:hover{ /* Hover effect for the general buttons */
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 12px rgb(241 162 82);
+    background-color: #67dadd;
+    cursor: pointer;
+}
+
+.topics-container { /* Styling for the container that holds the topics list */
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid rgb(216 215 118);
+    border-radius: 13px;
+    background: rgb(216 215 133);
+
+    /* Adding scroll functionality if the content exceeds the max height */
+    max-height: 200px; /* Set a maximum height for the container */
+    overflow-y: auto;  /* Enable vertical scrolling if content exceeds the max height */
+}
+
+
+.logout-btn { /* Styling for the logout button, positioned at the top right corner of the page */
+    /* Positioning and styling for the logout button */
+    position: absolute; /* Positioning the button at the top right corner of the page */
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+}
+
+.logout-btn:hover { /* Hover effect for the logout button */
+    transform: scale(1.1);
+    background-color: #c9302c;
+    cursor: pointer;
+}
+
+#deleteAcc{ /* Specific styling for the delete account button */
+    background-color: #d9534f;
+}
+
+#deleteAcc:hover{ /* Hover effect for the delete account button */
+    background-color: #6c100d;
+    color: white;
+}

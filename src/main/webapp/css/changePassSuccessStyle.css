@@ -1,0 +1,54 @@
+/* author : Paschalis Koukos
+    refers to the changePassSuccess.jsp page
+    this css file is used to style the change password success page, which includes a background image and styles
+    for the buttons on the page.
+*/
+
+
+body { /* setting the background image and centering the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+
+    background-image: url("../imgs/successBack.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container-success { /* styling the container that holds the success message and buttons */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+button { /* styling for the buttons on the page */
+    background-color: #8dd890; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+button:hover { /* hover effect for the buttons */
+    background-color: #45a049;
+}
+
+button[onclick*="LogoutServlet"] { /* specific styling for the logout button */
+    background-color: #f44336;
+}
+
+button[onclick*="LogoutServlet"]:hover { /* hover effect for the logout button */
+    background-color: #910e0e;
+}

@@ -1,0 +1,75 @@
+/* author: Paschalis Koukos */
+/* this css file is used for the login page (index.html) of the application */
+
+
+body { /* setting the background image and the font for the login page */
+    /* font settings */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* centering the login form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    /* background image settings */
+    background-image: url("../imgs/loginBack.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-container { /* styling the login form container */
+    background: #e6efeb;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgb(10 93 151);
+    width: 350px;
+}
+
+label { /* styling the labels for the input fields */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* styling the input fields for username and password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+/* styling the submit and button elements */
+input[type="submit"],
+input[type="button"] {
+    width: 100%;          
+    display: block; /* making the buttons take the full width of the container */   
+    margin-bottom: 10px;  
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #0a5d97;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type="submit"]{ /* specific styling for the submit button */
+    background-color: #22a666;
+}
+
+
+input[type="submit"]:hover { /* hover effect for the submit button */
+    background-color: #05572e;
+}
+
+input[type="button"]:hover { /* hover effect for the button element */
+    background-color: #063455;
+}

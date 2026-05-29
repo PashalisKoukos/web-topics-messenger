@@ -1,0 +1,70 @@
+/*  author Paschalis Koukos
+    This CSS file styles the registerPage.jsp page. It sets a background image for the body,
+    styles the text and form elements, and includes hover effects for buttons. The design aims to create a visually
+    appealing and user-friendly interface for user registration.
+*/
+
+body { /* general styles for the body of the page */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* centering the content both vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+
+    /* background image settings */
+    background-image: url("../imgs/loginBack.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.sign-up-container{ /* styles for the container that holds the form elements */
+    padding: 2rem; /* padding around the container */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label { /* styles for the label elements */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* styles for the input elements */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+button { /* styles for the button element */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #0a5d97;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover { /* hover effect for the button */
+    background-color: #012b49;
+    transform: scale(1.1); /* slightly enlarge the button on hover */
+}
+
+h1{ /* styles for the heading element */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

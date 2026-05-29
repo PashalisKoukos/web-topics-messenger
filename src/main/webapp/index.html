@@ -1,0 +1,33 @@
+<!--author: Paschalis Koukos-->
+<!--LOGIN PAGE-FIRST PAGE USER WATCHES-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Login</title>
+    <link rel="stylesheet" href="css/loginPageStyle.css"> <!--Link this html file to the CSS file-->
+    <link rel="icon" type="image/png" href="imgs/lock.webp"> <!--Favicon for the page-->
+</head>
+<body>
+    <!-- HTML Login Page -->
+    <div class="login-container"> <!--Container for the login form-->
+        <form action=LoginServlet method="POST" autocomplete="off"> <!--Form that submits to the LoginServlet using POST method-->
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required placeholder="e.g. Goerge123">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" autocomplete="off" required placeholder="Type your password">
+            <br>
+            <input type="submit" value="Sign In"> <!--Submit button for the form in order to sign in-->
+            <input type="button" value="Sign Up" onclick="window.location.href='registerPage.html'"> <!--Button that redirects to the registration page-->
+        </form>
+    </div>
+
+    <script src="js/loginPage.js"></script> <!--Link this html file to the JavaScript file-->
+    <!-- We will ensure that the form is validated before submission -->
+</body>
+</html>

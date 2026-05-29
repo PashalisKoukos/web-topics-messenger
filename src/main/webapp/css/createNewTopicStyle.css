@@ -1,0 +1,93 @@
+/* author : Paschalis Koukos
+    refers to createNewTopic.html
+    This css file styles the create new topic page, giving it a modern and clean look with a blurred background effect.
+    The form is centered on the page, and the buttons have a hover effect for better user interaction. 
+*/
+
+
+body{ /* setting the background image and centering the form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url("../imgs/newTopicBack.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.createNewTopic-container { /* styling the form container with a blurred background effect */
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: light border for better visibility */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 { /* styling the heading of the form */
+    font-size: 1.5rem; /* Adjusted font size for better fit , rem because it's relative to the font size of the parent element */
+    color: #f3ecec;
+    margin-bottom: 20px;
+}
+
+label { /* styling the labels of the form */
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #e6dfdf;
+}
+
+input, textarea { /* styling the input fields and textarea of the form */
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+textarea { /* specific styling for the textarea to make it larger and non-resizable */
+    height: 100px;
+    resize: none;
+}
+
+button { /* styling the submit button of the form */
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #8259d5; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { /* hover effect for the submit button */
+    background-color: #6a47b3;
+}
+
+#responseMessage { /* styling the response message that appears after form submission */
+    margin-top: 15px;
+    font-weight: bold;
+    color: #efecf4;
+}
+
+#btnReturn { /* styling the return button that appears after form submission */
+    background-color: #6c757d; 
+    margin-top: 10px;
+    display: none; /* Initially hidden, will be shown after form submission through JavaScript */
+}
+
+#btnReturn:hover { /* hover effect for the return button */
+    background-color: #5a6268;
+}

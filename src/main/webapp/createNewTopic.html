@@ -1,0 +1,33 @@
+<!--author : Paschalis Koukos-->
+<!-- This is the HTML page for creating a new topic / web service -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Topic</title>
+    <link rel="icon" type="image/png" href="imgs/allIcon.png"> <!-- Set the favicon for the page -->
+    <link rel="stylesheet" type="text/css" href="css/createNewTopicStyle.css"> <!-- Link to the CSS file for styling -->
+</head>
+<body>
+    <div class="createNewTopic-container"> <!-- Container for the form -->
+        <form id="topicForm">
+            <h1>Create New Topic for our Site</h1> <!-- Heading for the form -->
+            <!-- Input field for the topic name -->
+            <label for="topicName">Here you can type the topic name</label>
+            <input type="text" id="topicName" name="topicName" placeholder="Topic Name" required>
+            <!-- Textarea for the topic description -->
+            <label for="topicDesc">Here you can type the description</label>
+            <textarea id="topicDesc" name="topicDesc" placeholder="Description" required></textarea>
+
+            <!-- Button to save the topic, which triggers the saveTopic function on click -->
+            <!-- Button to return to the main page, which redirects the user to mainPage.jsp on click, 
+            VISIBLE ONLY AFTER SUCCESSFUL TOPIC CREATION -->  
+            <button type="button" id="btnSave" onclick="saveTopic()">Save Topic</button>
+            <button type="button" id="btnReturn" onclick="window.location.href='mainPage.jsp'">Return Home</button>
+            <p id="responseMessage"></p> <!-- Paragraph to display response messages after saving the topic -->
+        </form>
+    </div>
+    <script src="js/createNewTopic.js"></script> <!-- Link to the JavaScript file that contains the logic for saving the topic -->
+</body>
+</html>
