@@ -24,7 +24,7 @@ The application relies on a relational database (`projectdb`) consisting of thre
 * **users**: Stores unique uname and SHA-256 hashed passwords (upasshash).
 * **topics**: Contains id, unique name, and description.
 * **messages**: Tracks id, topic_id, user_id, msg, and date_sent.
-* <img width="2085" height="427" alt="image" src="https://github.com/user-attachments/assets/f7ed8cca-c2c5-483a-b4b0-231aadc646a9" />
+<img width="2043" height="373" alt="image" src="https://github.com/user-attachments/assets/9ef13976-b6f7-48fb-bf43-8b4f15746a79" />
 
 
 ## Setup Instructions
