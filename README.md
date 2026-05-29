@@ -36,3 +36,9 @@ The application relies on a relational database (`projectdb`) consisting of thre
     * Open `DatabaseConnection.java` and update the connection URL (usually `jdbc:mariadb://localhost:3306/projectdb`) and credentials (default XAMPP username is `root` with no password).
 4. **Deployment**: Deploy the project in a Java-compliant Web Container (e.g., Apache Tomcat 9 or higher).
 5. **Environment**: Ensure the provided utility files (`Util.java` and `ServletUtil.java`) are correctly placed in the `org.hua.it2024041` package to support JSON processing and hashing.
+
+## Project Structure
+The project follows the standard Maven-based Java Web Application structure to ensure modularity and ease of maintenance:
+* **src/main/java**: Contains the core Java source code (org.hua.it2024041), including Servlets, Database connectivity logic, hashing algorithms, and utility classes.
+* **src/main/webapp**: The central directory for all front-end resources, including static HTML files, dynamic JSP pages for server-side generated content, and dedicated folders (css, js, imgs) for styling, client-side scripting, and media files.
+* **WEB-INF**: Contains critical configuration files necessary for the deployment, routing, and security of the web application.
