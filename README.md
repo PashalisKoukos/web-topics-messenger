@@ -15,7 +15,9 @@ This project was developed as part of the "Web Technologies and Applications" co
 ## Technical Stack
 * **Back-end**: Java Servlets, JDBC, and Gson for JSON serialization/deserialization.
 * **Front-end**: HTML5, CSS3, and JavaScript (Fetch API) for asynchronous, dynamic page updates.
-* **Database**: MySQL/MariaDB based on the provided relational schema.
+* **Database Management**: 
+    * **XAMPP**: Used to host the MariaDB/MySQL database server locally.
+    * **MariaDB JDBC Driver**: The connector library that enables Java to communicate with the MariaDB database.
 
 ## Database Schema
 The application relies on a relational database (`projectdb`) consisting of three main entities:
@@ -24,10 +26,14 @@ The application relies on a relational database (`projectdb`) consisting of thre
 * **messages**: Tracks id, topic_id, user_id, msg, and date_sent.
 
 ## Setup Instructions
-1. **Database**: Import the projectdb.sql file into your local MariaDB/MySQL instance.
-2. **Configuration**: Update your database connection settings in the DatabaseConnection.java file to match your local environment.
-3. **Deployment**: Deploy the project in a Java-compliant Web Container (e.g., Apache Tomcat 9 or higher).
-4. **Environment**: Ensure the provided utility files (Util.java and ServletUtil.java) are correctly placed in the org.hua.it2024041 package to support JSON processing and hashing.
+1. **Database Setup**: 
+    * Open XAMPP Control Panel and start the MySQL/MariaDB service.
+    * Import the `projectdb.sql` file via phpMyAdmin or your preferred database tool.
+2. **Connector**: Ensure the `mariadb-java-client-x.x.x.jar` file is present in the `WEB-INF/lib` directory of your project.
+3. **Configuration**: 
+    * Open `DatabaseConnection.java` and update the connection URL (usually `jdbc:mariadb://localhost:3306/projectdb`) and credentials (default XAMPP username is `root` with no password).
+4. **Deployment**: Deploy the project in a Java-compliant Web Container (e.g., Apache Tomcat 9 or higher).
+5. **Environment**: Ensure the provided utility files (`Util.java` and `ServletUtil.java`) are correctly placed in the `org.hua.it2024041` package to support JSON processing and hashing.
 
 ## Project Deliverables
 * **Source Code**: Contains all HTML, CSS, JavaScript, JSP, and Java source files.
