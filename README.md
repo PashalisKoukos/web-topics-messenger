@@ -24,6 +24,8 @@ The application relies on a relational database (`projectdb`) consisting of thre
 * **users**: Stores unique uname and SHA-256 hashed passwords (upasshash).
 * **topics**: Contains id, unique name, and description.
 * **messages**: Tracks id, topic_id, user_id, msg, and date_sent.
+* <img width="2085" height="427" alt="image" src="https://github.com/user-attachments/assets/f7ed8cca-c2c5-483a-b4b0-231aadc646a9" />
+
 
 ## Setup Instructions
 1. **Database Setup**: 
@@ -34,8 +36,3 @@ The application relies on a relational database (`projectdb`) consisting of thre
     * Open `DatabaseConnection.java` and update the connection URL (usually `jdbc:mariadb://localhost:3306/projectdb`) and credentials (default XAMPP username is `root` with no password).
 4. **Deployment**: Deploy the project in a Java-compliant Web Container (e.g., Apache Tomcat 9 or higher).
 5. **Environment**: Ensure the provided utility files (`Util.java` and `ServletUtil.java`) are correctly placed in the `org.hua.it2024041` package to support JSON processing and hashing.
-
-## Project Deliverables
-* **Source Code**: Contains all HTML, CSS, JavaScript, JSP, and Java source files.
-* **Report**: A detailed PDF report documenting application functionality with screenshots.
-* **Video Presentation**: A minimum 2-minute demonstration of the application's source code and functional capabilities.
