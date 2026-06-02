@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
             // create a session and set the user ID and username as attributes
             request.getSession().setAttribute("userID", userId);
             request.getSession().setAttribute("username", username);
-            response.sendRedirect("MainPageServlet"); // redirect to the main page-servlet
+            response.sendRedirect("mainPage.jsp"); // redirect to the main page
         } else {
             response.sendRedirect("index.html?error=login"); // redirect back to the login page with an error message
         }

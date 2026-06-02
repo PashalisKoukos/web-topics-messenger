@@ -7,7 +7,7 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    if (session.getAttribute("username") == null) { // If the user is not logged in, redirect to login page
+    if (session.getAttribute("username") == null || session.getAttribute("userID")==null) { // If the user is not logged in, redirect to login page
         response.sendRedirect("index.html"); // send user to login page
         return; // Stop further processing of the JSP
     }
