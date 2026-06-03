@@ -55,7 +55,7 @@ public class SendMessageTopicServlet extends HttpServlet {
                     int count = rs.getInt(1); // Get the count of messages for the topic from the result set, num 1 because it's the first column in the result set
                     // dynamic html response to show the confirmation message and the count of messages for the topic, using the same CSS class for styling
                     response.setContentType("text/html;charset=UTF-8");
-                    response.getWriter().println("<html><head><link rel='stylesheet' href='css/sendMessageTopicStyle.css'></head>");
+                    response.getWriter().println("<html><head><title>Message sent!</title><link rel='icon' type='image/png' href='imgs/allIcon.png'><link rel='stylesheet' href='css/sendMessageTopicStyle.css'></head>");
                     response.getWriter().println("<body><div class='send-container'>"); // same CSS class as the sendMessageTopic.jsp for consistent styling
                     response.getWriter().println("<h2>Message sent successfully!</h2>");
                     response.getWriter().println("<p>Total messages for this topic: " + count + "</p>");
