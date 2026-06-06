@@ -14,14 +14,29 @@ if (params.has('error')) {
 // so we check if those fields are empty and if they are, we alert the user to fill them in and prevent the form from being submitted.
 document.querySelector('form').addEventListener('submit', function(event) {
 
-    // get params from the form 
-    const user = document.getElementById('username').value.trim();
-    const pass = document.getElementById('password').value.trim();
+    // get params from the form
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
 
     if (user === "" || pass === "") { // Check if either the username or password fields are empty
         alert("Please fill in both username and password fields."); // empty parameter found! Alert the user to fill in both fields
         event.preventDefault(); // Prevent the form from being submitted if either field is empty
         // this will return back to the login page without submitting the form,
         // allowing the user to correct their input and try again.
+    }
+});
+
+// Add an event listener to the toggle password visibility button
+document.getElementById('togglePassword').addEventListener('click', function () { // on click of the toggle password visibility button
+    const passwordField = document.getElementById('password');
+
+    // We check the current type of the password field. If it's 'password', we change it to 'text' to show the password, and if it's 'text', we change it back to 'password'
+    // to hide the password. We also update the button text accordingly to indicate whether the password is currently visible or hidden.
+    if (passwordField.getAttribute('type')==='password') { // if the password field is currently of type 'password', change it to 'text' to show the password
+        passwordField.setAttribute('type', 'text');
+        this.textContent = '*'; // change the button text to '*' to indicate that the password is currently visible
+    }  else{
+        passwordField.setAttribute('type', 'password'); // if the password field is currently of type 'text', change it back to 'password' to hide the password
+        this.textContent = '👁'; // change the button text to '👁' to indicate that the password is currently hidden
     }
 });

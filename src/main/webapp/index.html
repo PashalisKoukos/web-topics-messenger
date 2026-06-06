@@ -19,8 +19,15 @@
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required placeholder="e.g. Goerge123">
             <br>
+            <!-- Label for the password field -->
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" autocomplete="off" required placeholder="Type your password">
+            <!-- Container for the password input and the toggle button -->
+            <div class="password-container" style="position: relative;">
+                <input type="password" name="password" id="password" autocomplete="off" required placeholder="Type your password">
+                <!-- Span element that acts as a button to toggle the visibility of the password -->
+                 <!-- We use span because it's an inline element that can be styled -->
+                <span id="togglePassword" style="cursor: pointer; position: absolute; right: 10px; top: 10px;">👁</span>
+            </div>
             <br>
             <input type="submit" value="Sign In"> <!--Submit button for the form in order to sign in-->
             <input type="button" value="Sign Up" onclick="window.location.href='registerPage.html'"> <!--Button that redirects to the registration page-->

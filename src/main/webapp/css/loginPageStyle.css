@@ -73,3 +73,21 @@ input[type="submit"]:hover { /* hover effect for the submit button */
 input[type="button"]:hover { /* hover effect for the button element */
     background-color: #063455;
 }
+
+
+.password-container { /* container for the password input and the toggle password visibility icon */
+    position: relative;
+    width: 100%;
+}
+
+#togglePassword { /* styling the toggle password visibility icon */
+    position: absolute; /* positioning the icon inside the password input field */
+    right: 10px;
+    top: 10px;
+    user-select: none; /* preventing the user from selecting the icon text */
+    z-index: 10; /* ensuring the icon is above the password input field */
+}
+
+#password { 
+    padding-right: 40px; /* adding padding to the right of the password input field to make space for the toggle icon */
+}
