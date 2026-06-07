@@ -34,8 +34,7 @@ public final class ServletUtil {
 	    }
 	    final String payload = sb.toString();
 	    // Convert (JSON) String to Object
-	    final T t = jsonStrToObj(cls, payload);
-		return t;
+        return jsonStrToObj(cls, payload);
 	}
 	
 	// Convert Object to JSON String and Send it in the HTTP Response Body
@@ -54,7 +53,7 @@ public final class ServletUtil {
 		if (path == null) return null;
 		String[] tokens = path.split("/");
 		for(String token : tokens) {
-			if (token.trim().equals("")) continue;
+			if (token.trim().isEmpty()) continue;
 			return token;
 		}
 		return null;
@@ -77,7 +76,7 @@ public final class ServletUtil {
 	
 	public static final class TestData {
 		
-		private int intValue;
+		private final int intValue;
 		public final String strValue;
 		public boolean booleanValue;
 		

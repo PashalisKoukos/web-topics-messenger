@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpSession;
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession(false); // Get the existing session, do not create a new one
         if (session != null) {
             session.invalidate(); //! Invalidate the session to log out the user
@@ -22,7 +22,7 @@ public class LogoutServlet extends HttpServlet {
         response.sendRedirect("index.html"); // Redirect to the index page (login page)
     }
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doGet(request,response); // Handle POST requests the same way as GET requests
     }
 }

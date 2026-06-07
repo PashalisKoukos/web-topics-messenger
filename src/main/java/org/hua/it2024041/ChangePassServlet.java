@@ -16,11 +16,11 @@ import jakarta.servlet.http.HttpSession;
 @WebServlet("/ChangePassServlet")
 public class ChangePassServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response); // call doPost to handle the request
     }
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession(false); // take the current session, if it doesn't exist return null
         if (session == null || session.getAttribute("username") == null) { // if there is no session or the session doesn't have a username attribute, redirect to login page
             response.sendRedirect("index.html");  // redirect to login page

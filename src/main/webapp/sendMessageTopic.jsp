@@ -7,7 +7,7 @@ and displays a list of available topics. -->
 <%@ page import="org.hua.it2024041.DatabaseConnection" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%
     // check if the user is logged in, if not redirect to the login page
     if (session.getAttribute("username") == null || session.getAttribute("userID")==null) {

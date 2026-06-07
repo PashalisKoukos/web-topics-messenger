@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CreateNewTopicServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Topic topic = ServletUtil.getRequestData(Topic.class, request); // Get Topic data from HTTP Request Body (JSON) and Convert it to Object of Type Topic
 
         String sql = "INSERT INTO topics (id, name, description) VALUES (null, ?, ?)"; // SQL query to insert a new topic into the database, with id set to null for auto-increment
@@ -37,7 +37,7 @@ public class CreateNewTopicServlet extends HttpServlet {
      * and handles any exceptions that may occur during the database operation.
     */
     private static Map<String, String> saveTopicToDatabase(String sql, Topic topic) {
-        boolean status = false; // Variable to track the success of the database operation
+        boolean status; // Variable to track the success of the database operation
         // Use try-with-resources to ensure that database resources are properly closed after use
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement pst = conn.prepareStatement(sql)) {
