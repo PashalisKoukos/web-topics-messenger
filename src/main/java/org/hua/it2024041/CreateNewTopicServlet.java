@@ -58,7 +58,7 @@ public class CreateNewTopicServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request, response); // For simplicity, we can handle GET requests the same way as POST requests, allowing clients to create topics using either method
     }
 }
