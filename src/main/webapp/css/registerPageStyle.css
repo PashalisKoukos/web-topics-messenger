@@ -66,5 +66,5 @@ button:hover { /* hover effect for the button */
 
 h1{ /* styles for the heading element */
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font family for the heading */
 }

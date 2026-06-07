@@ -1,6 +1,6 @@
 // provided by the project instrucions
 // this class is used to provide utility methods for the project, such as hashing passwords or other sensitive data
-
+// it is a final class, so it cannot be extended, and it has a private constructor, so it cannot be instantiated
 package org.hua.it2024041;
 
 import java.nio.charset.StandardCharsets;

@@ -10,7 +10,7 @@ public class User {
 	private final String username;
 	private final String password_hash;
 	
-	public User(int id, String username, String password_hash) {
+	public User(int id, String username, String password_hash) { // Constructor to initialize the user object with id, username, and password hash
 		this.id = id;
 		this.username = username;
 		this.password_hash = password_hash;

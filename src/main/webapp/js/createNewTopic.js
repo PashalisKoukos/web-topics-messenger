@@ -4,7 +4,7 @@
 // It sends a POST request to the CreateNewTopicServlet with the topic name and description, and then displays 
 // the response message from the server.
 // refers to the createNewTopic.html page and is included in that page using a script tag
-
+// We use fetch API to send the POST request to the server and handle the response asynchronously using async/await.
 async function saveTopic() {
     const data = { // Create a data object that contains the topic name and description, which are retrieved from the input fields in the HTML form
         name: document.getElementById('topicName').value, // Get the value of the topic name input field

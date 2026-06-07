@@ -30,7 +30,7 @@ p{ /* styles for paragraph elements */
 
 p::first-line{ /* styles for the first line of paragraph elements */
     color: rgb(104 7 7 / 0.75);
-    font-size: 1.7rem;
+    font-size: 1.7rem; /* slightly larger font size for the first line */
 }
 
 .send-container { /* styles for the container that holds the form elements */

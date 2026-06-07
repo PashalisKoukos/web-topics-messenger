@@ -31,6 +31,7 @@ and displays a list of available topics. -->
             </p>
             <label>Select a topic to send your message:</label> <!-- Label for the topic selection dropdown -->
             <label>
+                <!-- java code to connect to the database and retrieve the list of topics to fill the dropdown -->    
                 <select name="topic_id"> <!-- Dropdown to select a topic, populated with topics from the database -->
                     <%
                         Connection conn = null;

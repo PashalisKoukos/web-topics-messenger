@@ -2,7 +2,7 @@
 // this class is responsible for establishing a connection to the database.
 // It uses the MariaDB JDBC driver to connect to a MariaDB database named "projectdb" running on localhost
 // with the default port 3306. The username is "root" and the password is an empty string. The getConnection method returns a Connection object that can be used to interact with the database.
-
+// final class to prevent inheritance, and a private constructor to prevent instantiation, since this class is only meant to provide a static method for getting a database connection.
 package org.hua.it2024041;
 
 import java.sql.Connection;

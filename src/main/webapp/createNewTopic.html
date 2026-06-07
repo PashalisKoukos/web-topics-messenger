@@ -1,6 +1,7 @@
 <!--author : Paschalis Koukos-->
 <!-- This is the HTML page for creating a new topic / web service -->
-
+<!-- It allows users to create a new topic with a name and description -->
+<!--We use web services-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +21,10 @@
             <label for="topicDesc">Here you can type the description</label>
             <textarea id="topicDesc" name="topicDesc" placeholder="Description" required></textarea>
 
-            <!-- Button to save the topic, which triggers the saveTopic function on click -->
-            <!-- Button to return to the main page, which redirects the user to mainPage.jsp on click, 
-            VISIBLE ONLY AFTER SUCCESSFUL TOPIC CREATION -->  
+            <!-- Button to save the topic, which triggers the saveTopic function on click --> 
             <button type="button" id="btnSave" onclick="saveTopic()">Save Topic</button>
+            <!-- Button to return to the main page, which redirects the user to mainPage.jsp on click, 
+            VISIBLE ONLY AFTER SUCCESSFUL TOPIC CREATION --> 
             <button type="button" id="btnReturn" onclick="window.location.href='mainPage.jsp'">Return Home</button>
             <p id="responseMessage"></p> <!-- Paragraph to display response messages after saving the topic -->
         </form>

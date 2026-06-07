@@ -1,7 +1,7 @@
 // author : Paschalis Koukos
 // Servlet for changing the password of the user,
 // checks if the old password is correct and if so updates the password in the database
-
+// if the old password is incorrect, redirects back to the change password page with an error message
 package org.hua.it2024041;
 
 import java.io.IOException;

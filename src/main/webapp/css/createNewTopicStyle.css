@@ -6,6 +6,7 @@
 
 
 body{ /* setting the background image and centering the form */
+    /* Using flexbox to center the form both vertically and horizontally */
     display: flex;
     justify-content: center;
     align-items: center;

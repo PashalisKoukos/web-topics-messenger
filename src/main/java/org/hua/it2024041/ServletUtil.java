@@ -1,5 +1,6 @@
 // provided by the instructor
-
+// this class contains utility methods for working with Servlets, such as reading request data and sending response
+// data in JSON format.
 package org.hua.it2024041;
 
 import java.io.BufferedReader;

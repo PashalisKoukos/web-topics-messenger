@@ -8,7 +8,7 @@ public class Topic {
     public String name;
     public String description;
 
-    public Topic(String name, String description) {
+    public Topic(String name, String description) { // constructor to initialize the name and description of the topic
         this.name = name;
         this.description = description;
     }

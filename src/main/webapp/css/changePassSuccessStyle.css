@@ -34,7 +34,7 @@ button { /* styling for the buttons on the page */
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; /* allows the buttons to sit next to each other */
     font-size: 16px;
     margin: 8px;
     cursor: pointer;

@@ -17,7 +17,7 @@ public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false); // Get the existing session, do not create a new one
         if (session != null) {
-            session.invalidate(); // Invalidate the session to log out the user
+            session.invalidate(); //! Invalidate the session to log out the user
         }
         response.sendRedirect("index.html"); // Redirect to the index page (login page)
     }

@@ -1,5 +1,6 @@
 // author : Pachalis Koukos
 // Refers to the registerPage.html and handles form validation and error messages
+// this js is responsible for validating the registration form and displaying appropriate error messages based on the URL parameters
 
 function isValid(){
     // get the values of the input fields

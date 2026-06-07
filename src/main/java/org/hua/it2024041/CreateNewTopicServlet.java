@@ -30,7 +30,12 @@ public class CreateNewTopicServlet extends HttpServlet {
 
         ServletUtil.sendResponseData(responseMap, response); // Send the response message as JSON in the HTTP Response Body
     }
-
+    /*
+     * This method saves a new topic to the database using the provided SQL query and topic data.
+     * It returns a map containing a message indicating whether the topic was created successfully or if there
+     * was an error during the creation process. The method uses a try-with-resources block to manage database resources 
+     * and handles any exceptions that may occur during the database operation.
+    */
     private static Map<String, String> saveTopicToDatabase(String sql, Topic topic) {
         boolean status = false; // Variable to track the success of the database operation
         // Use try-with-resources to ensure that database resources are properly closed after use
