@@ -3,6 +3,7 @@
 A collaborative web platform where registered users can define topics of interest, post messages, and manage their discussions through a centralized database. Built as part of the *Web Technologies and Applications* course, the project demonstrates a full-stack implementation using Java Servlets, relational database management, and asynchronous client-server communication.
 
 ![Java](https://img.shields.io/badge/Java-Servlets-red?logo=java) ![MariaDB](https://img.shields.io/badge/Database-MariaDB-blue?logo=mariadb) ![Tomcat](https://img.shields.io/badge/Server-Tomcat%209+-yellow?logo=apachetomcat) ![License](https://img.shields.io/badge/License-MIT-green)
+![HTML5](https://img.shields.io/badge/Web-HTML5%2FCSS3-red?logo=html5)
 ---
 
 ## Table of Contents
