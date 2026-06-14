@@ -2,6 +2,7 @@
 
 A collaborative web platform where registered users can define topics of interest, post messages, and manage their discussions through a centralized database. Built as part of the *Web Technologies and Applications* course, the project demonstrates a full-stack implementation using Java Servlets, relational database management, and asynchronous client-server communication.
 
+![Java](https://img.shields.io/badge/Java-Servlets-red?logo=java) ![MariaDB](https://img.shields.io/badge/Database-MariaDB-blue?logo=mariadb) ![Tomcat](https://img.shields.io/badge/Server-Tomcat%209+-yellow?logo=apachetomcat) ![License](https://img.shields.io/badge/License-MIT-green)
 ---
 
 ## Table of Contents
@@ -11,7 +12,6 @@ A collaborative web platform where registered users can define topics of interes
 - [Database Schema](#database-schema)
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
-- [API Overview](#api-overview)
 
 ---
 
@@ -137,20 +137,4 @@ Deploy the project to **Apache Tomcat 9 or higher**:
 - Build the project and deploy the generated `.war` file, or run it directly through the IDE's integrated server support.
 - The application will be available at `http://localhost:8080/<project-name>/`.
 
----
 
-## API Overview
-
-All server communication is handled through Servlets mapped in `web.xml`. The front-end communicates exclusively via the Fetch API using JSON payloads.
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/signup` | POST | Register a new user |
-| `/signin` | POST | Authenticate an existing user |
-| `/signout` | POST | End the current session |
-| `/profile` | GET / POST | View or update account details |
-| `/deleteAccount` | POST | Permanently delete a user account |
-| `/topics` | GET / POST | List all topics or create a new one |
-| `/messages` | GET / POST | Retrieve or post messages for a topic |
-
-> Exact endpoint names may vary depending on your `web.xml` configuration.
