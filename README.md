@@ -80,7 +80,7 @@ topics-exchange/
 │   └── main/
 │       ├── java/
 │       │   └── org/hua/it2024041/
-│       │       ├── servlets/          # All Servlet classes (auth, topics, messages)
+│       │       ├── [servlets]*.java          # All Servlet classes (auth, topics, messages)
 │       │       ├── DatabaseConnection.java   # JDBC connection configuration
 │       │       ├── Util.java          # Hashing and general utilities
 │       │       └── ServletUtil.java   # JSON response helpers
